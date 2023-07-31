@@ -1,0 +1,21 @@
+
+<html>
+<head>
+    <title>Remove Item from Dropdown List</title>
+    <script>
+        function removeItem() {
+            var select = document.getElementById("mySelect");
+            select.remove(select.selectedIndex);
+        }
+    </script>
+</head>
+<body>
+    <h1>Remove Item from Dropdown List</h1>
+    <select id="mySelect">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    <button onclick="removeItem()">Remove Selected Item</button>
+</body>
+</html>

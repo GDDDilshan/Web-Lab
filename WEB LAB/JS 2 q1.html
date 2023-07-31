@@ -1,0 +1,22 @@
+
+<html>
+<head>
+    <title>Date and Time</title>
+    <script>
+        function displayDateTime() {
+            var currentdate = new Date();
+            var datetime = "Current Date and Time: " + currentdate.getDate() + "/"
+                            + (currentdate.getMonth()+1)  + "/" 
+                            + currentdate.getFullYear() + " @ "  
+                            + currentdate.getHours() + ":"  
+                            + currentdate.getMinutes() + ":" 
+                            + currentdate.getSeconds();
+            document.getElementById("datetime").innerHTML = datetime;
+        }
+    </script>
+</head>
+<body onload="displayDateTime()">
+    <h1>Date and Time</h1>
+    <p id="datetime"></p>
+</body>
+</html>

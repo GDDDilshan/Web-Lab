@@ -1,0 +1,17 @@
+
+<html>
+<head>
+    <title>Year of Birth Calculator</title>
+    <script>
+        function calculateYearOfBirth() {
+            var nic = prompt("Please enter the student's NIC number:");
+            var year = "19" + nic.substring(0, 2);
+            alert("The student's year of birth is: " + year);
+        }
+    </script>
+</head>
+<body>
+    <h1>Year of Birth Calculator</h1>
+    <button onclick="calculateYearOfBirth()">Calculate Year of Birth</button>
+</body>
+</html>

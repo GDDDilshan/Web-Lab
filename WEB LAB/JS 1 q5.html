@@ -1,0 +1,22 @@
+
+<html>
+<head>
+    <title>Day of the Week</title>
+    <script>
+        function displayDay() {
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var number = prompt("Enter a number from 1-7:");
+            if (number >= 1 && number <= 7) {
+                var day = days[number - 1];
+                alert("The day is: " + day);
+            } else {
+                alert("Invalid input. Please enter a number from 1-7.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Day of the Week</h1>
+    <button onclick="displayDay()">Display Day</button>
+</body>
+</html>
